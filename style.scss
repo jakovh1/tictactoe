@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  .board {
+    border: 1px solid black;
+    height: 50vh;
+    width: 50vh;
+
+    .board-row {
+      border: none;
+      height: calc(100% / 3);
+      width: 100%;
+      display: flex;
+
+      > div {
+        height: 100%;
+        width: calc(100% / 3);
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        
+        span {
+          line-height: 1;
+          font-size: 4rem;
+        }
+      }
+
+      .mid {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+      }
+    }
+
+    .board-row.top,
+    .board-row.mid {
+      border-bottom: 1px solid black;
+    }
+  }
+}

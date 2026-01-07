@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div id="player-x-container">
+    <input type="text" id="player-x-input" placeholder="Enter the player name for ❌" required/>
+    <button id="set-x-name" disabled>Set Name</button>
+  </div>
+  <div class="board">
+    <div class="board-row top">
+      <div class="left cell" data-row="0" data-col="0"></div>
+      <div class="mid cell" data-row="0" data-col="1"></div>
+      <div class="right cell" data-row="0" data-col="2"></div>
+    </div>
+
+    <div class="board-row mid">
+      <div class="left cell" data-row="1" data-col="0"></div>
+      <div class="mid cell" data-row="1" data-col="1"></div>
+      <div class="right cell" data-row="1" data-col="2"></div>
+    </div>
+
+    <div class="board-row bot">
+      <div class="left cell" data-row="2" data-col="0"></div>
+      <div class="mid cell" data-row="2" data-col="1"></div>
+      <div class="right cell" data-row="2" data-col="2"></div>
+    </div>
+    <h2 id="message"></h2>
+    <div id="game-buttons">
+      <button id="start-game" disabled>Start</button>
+      <button id="restart-game" disabled>Restart Game</button>
+    </div>
+  </div>
+  <div id="player-o-container">
+    <input type="text" id="player-o-input" placeholder="Enter the player name for ⭕" required/>
+    <button id="set-o-name" disabled>Set Name</button>
+  </div>
+</body>
+</html>

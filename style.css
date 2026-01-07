@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+}
+body .board {
+  border: 1px solid black;
+  height: 50vh;
+  width: 50vh;
+}
+body .board .board-row {
+  border: none;
+  height: 33.3333333333%;
+  width: 100%;
+  display: flex;
+}
+body .board .board-row > div {
+  height: 100%;
+  width: 33.3333333333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .board .board-row > div span {
+  line-height: 1;
+  font-size: 4rem;
+}
+body .board .board-row .mid {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+body .board .board-row.top,
+body .board .board-row.mid {
+  border-bottom: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
